@@ -1,0 +1,24 @@
+20 Jan 20
+
+Lecture 1
+
+•	Did you before know about the techniques Git, GitHub, Markdown and/or GitHub Pages?
+I did have some previous experiences with git and GitHub but not markdown or GitHub pages. 
+Because we have had programming related projects at previous courses, we have used git as revision control. 
+In previous projects we worked mostly with push, pull, merge, branch, commit and in some cases merge conflicts, 
+revert and reset. Of course, there is many practices that I still need and want to learn about revision control. 
+
+•	Have you ever created websites before?
+Yes, I had a similar course in the senior high school (gymnasium), if I recall it was called “Webbutveckling”,
+ which included html and css. We did some php as well, but I have forgotten most of it. When I created my websites,
+  I did not use any js which I am excited to work with.
+
+•	Briefly explain your experience and knowledge of web application development.
+My previous experience with web development is that I enjoy it a lot however I did not work with very complex implementations,
+ simpler html and css. I remember really enjoying the designing aspect of it. We did not work too much with the backend side.
+
+•	What is your TIL for this course section?
+•	    Tagging the version of the commit.
+•	    Git hub pages, I learned that it is possible to host your website on github
+•	    Live server extension on visual studio to be able to visually see your changes as you work.
+•	    Being able to create other up streams and down streams 
