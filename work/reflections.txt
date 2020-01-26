@@ -1,6 +1,6 @@
 20 Jan 20
 
-Lecture 1
+Assignment 1
 
 •	Did you before know about the techniques Git, GitHub, Markdown and/or GitHub Pages?
 I did have some previous experiences with git and GitHub but not markdown or GitHub pages. 
