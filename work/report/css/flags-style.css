@@ -1,0 +1,44 @@
+body{
+    position: relative;
+    margin: 0px;
+    
+}
+
+.flag-container{
+background-color: black;
+padding: 8px 6px 8px;
+
+}
+
+.flag + .flag{
+margin-top: 8px;
+}
+
+.flag {
+    cursor: pointer;
+    background-color: var(--background);
+    width: 50px;
+    height: 30px;
+    position: relative;
+}
+
+.flag::before {
+    background-color: var(--cross);
+    content: "";
+    height: 15%;
+    left: 0;
+    margin-top: -5%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.flag::after {
+    background-color: var(--cross);
+    content: "";
+    height: 100%;
+    left: 30%;
+    margin-left: -5%;
+    position: absolute;
+    top: 0;
+    width: 9%;
+}

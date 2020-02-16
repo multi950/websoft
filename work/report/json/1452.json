@@ -1,0 +1,149 @@
+{
+    "SkolenhetResponse": {
+      "-xmlns:i": "http://www.w3.org/2001/XMLSchema-instance",
+      "-xmlns": "SkolenhetsregisterPublicAPI.Models",
+      "Skolenheter": {
+        "Skolenhet": [
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "11658453",
+            "Skolenhetsnamn": "Sörgårdens fritidshem"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "20657642",
+            "Skolenhetsnamn": "Åsalyckans fritidshem"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "23064622",
+            "Skolenhetsnamn": "Träningsskolan"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "33759766",
+            "Skolenhetsnamn": "Tranängskolan 7-9"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "38586270",
+            "Skolenhetsnamn": "Särvux"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "39343963",
+            "Skolenhetsnamn": "Central Insamlingsenhet"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "39985444",
+            "Skolenhetsnamn": "Björnens Fritidshem"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "43814639",
+            "Skolenhetsnamn": "Tranemo gymnasieskola, SFI"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "54601339",
+            "Skolenhetsnamn": "Tranängskolan F-6"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "54767253",
+            "Skolenhetsnamn": "Sjötoftaskolan"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "8024978473",
+            "Skolenhetskod": "56429514",
+            "Skolenhetsnamn": "Uddeboskolan"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "60513602",
+            "Skolenhetsnamn": "Tranemo gymnasieskola"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "60522090",
+            "Skolenhetsnamn": "Ambjörnarpskolan"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "63852869",
+            "Skolenhetsnamn": "Ljungsarpskolan"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "7164478328",
+            "Skolenhetskod": "76346579",
+            "Skolenhetsnamn": "Skogsduvan Mossebo"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "77589919",
+            "Skolenhetsnamn": "Länghemskolan"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "78108063",
+            "Skolenhetsnamn": "Ljungbackens fritidshem"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "79930788",
+            "Skolenhetsnamn": "Regnbågens fritidshem"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "82023614",
+            "Skolenhetsnamn": "Grimsåsskolan"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "87422942",
+            "Skolenhetsnamn": "Dalstorpskolan"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "88207548",
+            "Skolenhetsnamn": "Limmaredskolan"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "88846218",
+            "Skolenhetsnamn": "Grundsärskolan Tranemo"
+          },
+          {
+            "Kommunkod": "1452",
+            "PeOrgNr": "2120001462",
+            "Skolenhetskod": "98249908",
+            "Skolenhetsnamn": "Tranemo gymnasieskola, komvux"
+          }
+        ]
+      },
+      "Uttagsdatum": "2020-01-28T23:45:19.8324219+01:00"
+    }
+  }

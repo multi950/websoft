@@ -31,7 +31,18 @@
         })
         .then((myJson) => {
             console.log(myJson);
+                appendData(myJson);
         });
 
     console.log('Sandbox MEGA is ready!');
+
 })();
+
+function appendData(data) {
+    var mainContainer = document.getElementById('content');
+    for (var i = 0; i < data.Skolenheter.length; i++) {
+      var div = document.createElement("div");
+      div.innerHTML = 'School name ' + data.Skolenheter[i].Skolenhetsnamn + ', school code: ' + data.Skolenheter[i].Skolenhetskod;
+      mainContainer.appendChild(div);
+    }
+  }

@@ -1,15 +1,21 @@
-/*
- * Comments are written as C++ style. 
- */
-html {
-    overflow-y: scroll;
+
+body{
+    background-image: url("../img/bark.jpg");
+    position: absolute;
+    height: 100%;
 }
 
-body {
-    margin: 8px auto;
-    background: #fff;
+.content {
+    margin: 4em auto;
+    background: rgba(255, 255, 255, 0.55);
     width: 700px;
 }
+
+.content p{
+    padding: 3em;
+    padding-top: 1em;
+}
+
 .link_logo{
     margin: 3em; 
     height: 7em; 
@@ -27,4 +33,27 @@ body {
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
+}
+
+.clickable_header{
+    cursor: pointer;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    padding: 4px;
+}
+.text_container {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 0px;
+    position: relative;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.appear {
+    max-height: 500px;
 }

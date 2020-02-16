@@ -1,0 +1,55 @@
+
+.bird {
+    margin-top: 25px;
+    background: url('../img/bird.png') no-repeat; 
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    float: right;
+    bottom: 0;
+    position: fixed;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .flying{
+    background: url('../img/flying_bird.png') no-repeat; 
+    background-size: contain;
+  }
+  .standing{
+    background: url('../img/bird.png') no-repeat; 
+    background-size: contain;
+  }
+  .jumpRight{
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: right;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+  }
+  .jumpLeft{
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: left;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes right {
+    0%   {left:0px; top:0px;}
+    15%  {left:20px; top:-20px;}
+    30%  {left:20px; top:0px;}
+    70%  {left:20px; top:0px;}
+    85%  {left:40px; top:-20px;}
+    100% {left:40px; top:0px;}
+  }
+  @keyframes left {
+    0%   {left:0px; top:0px;}
+    15%  {left:-20px; top:-20px;}
+    30%  {left:-20px; top:0px;}
+    70%  {left:-20px; top:0px;}
+    85%  {left:-40px; top:-20px;}
+    100% {left:-40px; top:0px;}
+  }
+  
