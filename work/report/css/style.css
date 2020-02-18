@@ -45,7 +45,7 @@ body{
 }
 .text_container {
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
     max-height: 0px;
     position: relative;
     -webkit-transition: all .5s ease;

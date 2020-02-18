@@ -19,7 +19,7 @@ My previous experience with web development is that I enjoy it a lot however I d
 •        Tagging the version of the commit.
 •        Git hub pages, I learned that it is possible to host your website on GitHub
 •        Live server extension on visual studio to be able to visually see your changes as you work.
-•        Being able to create other upstreams and down streams 
+•        Being able to create other upstream and down streams 
 
 
 Assignment 2
@@ -33,7 +33,7 @@ Hypertext Markup Language is a standard used to display documents on web browser
 The amount of visual customization on an HTML document is limited, it is possible to add images and such. CSS was invented to add some customization options to HTML documents, like fonts, colors, and backgrounds. 
 JavaScript makes it possible for webpages to become interactive, used for example in games or image editing.
 
-• Give a brief explanation of how the browser, the HTTP protocol, and the webserver interacts.
+• Give a brief explanation of how the browser, the HTTP protocol, and the web server interacts.
 The browser uses HTTP to send almost all kinds of files over the internet. The communication between the browser and a server starts with a contact initialization from the client-side.
 The client sends an HTTP request to the server and based on the request and possibly some data, the server sends a response. The server can not start to communicate with a client.
 
@@ -54,20 +54,29 @@ Writing JS feels very natural after using Java, I would say that JS is a bit lib
 
 • Describe how you worked with the coding exercise:
 I used mostly google searching in order to find solutions to the problems I encountered, for example when I wanted to create animations. 
-I feel like the exercise wasn´t that difficult but it was very time consuming. The time it took could be the result of me putting too much attention into the details. 
+I feel like the exercise wasn't that difficult but it was very time consuming. The time it took could be the result of me putting too much attention into the details. 
 Another thing that took some time was figuring out which way to tackle different issues, since there is multiple solutions for every problem.
 
 • What grade do you aim for and how did your code turn out to be?
 I aim for a 5 and I feel pretty happy with how it turned out. 
-I definetly feel like I could refactor the code in order to make it more readable and there is definetly some pieces of spagetti code.
+I definitely feel like I could refactor the code in order to make it more readable and there is definitely some pieces of spaghetti code.
 
 • What is your TIL for this course section?
 
   • I learned about inserting php/html files in a php document
-  • creating animations using CSS transition and Keyframes as well as jQuery Animate
+  • creating animations using CSS transition and Keyframe as well as jQuery Animate
   • the meaning of different CSS properties 
   • how to fetch and handle a json
-  • how async funtions work and how they are implimented
+  • how async funtions work and how they are implemented
+
+Assignment 4
+
+  Tell me about your previous experience on node/npm or any equal programming tools.
+How do you feel about working with JavaScript, Node and Express?
+Explain how you did take on the coding assignment, did you have a plan and did it work?
+What grade did you aim for and was it a difficult level?
+What is your TIL for this course section?
+Ensure you have pushed all your work to GitHub and attach a tag v4.0.0 or greater.
 
 
 
