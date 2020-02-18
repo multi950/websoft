@@ -3,6 +3,7 @@ body{
     background-image: url("../img/bark.jpg");
     position: absolute;
     height: 100%;
+    width: 100%;
 }
 
 .content {
