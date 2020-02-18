@@ -1,21 +1,28 @@
 "use strict";
 
 const port = process.env.DBWEBB_PORT || 1337;
-
+const path = require("path");
 const express = require("express");
 const app = express();
 
-const middleware = require("./middleware/index.js");
-app.use(middleware.logIncomingToConsole);
-
+const routeToday = require("./routes/today.js");
 const routeIndex = require("./routes/index.js");
-app.use("/", routeIndex);
+const middleware = require("./middleware/index.js");
 
-const path = require("path");
+
+app.set("view engine", "ejs");
+app.set('views', path.join(__dirname,'/views'));
+
+app.use(middleware.logIncomingToConsole);
 app.use(express.static(path.join(__dirname, "public")));
+app.use("/", routeIndex);
+app.use("/today", routeToday);
 
 app.listen(port, logStartUpDetailsToConsole);
 
+/**
+ * @return {void}
+ */
 function logStartUpDetailsToConsole() {
     let routes = [];
 

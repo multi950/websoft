@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .match {
+            background-color: rgb(0, 148, 104);
+        }
+
+        .picked {
+            background-color: #18ABDE;
+        }
+
+        .lotto {
+            background-color: rgb(211, 179, 0);
+        }
+
+        p {
+            font-family: monospace;
+            font-size: large;
+        }
+        h1{
+            font-family: monospace;
+            font-size: xx-large;
+            text-align: center;
+        }
+        td{
+            font-family: monospace;
+            font-size: x-large;
+        }
+        .lotto-container {
+            background-color: lightgoldenrodyellow;
+            width: fit-content;
+            margin: 0 auto;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="lotto-container">
+        <h1>Lotto</h1>
+
+        <p style="color: rgb(211, 179, 0); font-weight: bold;">Lotto number</p>
+        <p style="color: #18ABDE; font-weight: bold;">Your Pick</p>
+        <p style="color: rgb(0, 148, 104); font-weight: bold;">Match!</p>
+        <table border=1>
+            <% var index = 1 %>
+            <% for(var j=0; j<5; j++) { %>
+            <tr>
+                <% for(var i=0; i<7; i++) { %>
+                <% if(matches.includes(index)){%>
+                <td class="match">
+                    <% } else if(pickedNumbers.includes(index)){%>
+                <td class="picked">
+                    <%} else if(lottoNumbers.includes(index)){%>
+                <td class="lotto">
+                    <%} else{%>
+                <td>
+                    <% } %>
+                    <%=index++%>
+
+                </td>
+                <%}%>
+        </tr>
+        <%}%>
+        </table>
+
+        <p>You had <%= matches.length %> matches!</p>
+    </div>
+</body>
+
+</html>
