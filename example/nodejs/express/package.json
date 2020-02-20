@@ -1,5 +1,5 @@
 {
-  "name": "myexpress",
+  "name": "websoft",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "ejs": "^2.7.4",
     "express": "^4.17.1"
   },
   "description": ""
+=======
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+>>>>>>> 3de5f78c05af695faf44186e6ab4499432c51812
 }

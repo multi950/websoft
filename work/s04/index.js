@@ -5,7 +5,6 @@ const path = require("path");
 const express = require("express");
 const app = express();
 
-const routeToday = require("./routes/today.js");
 const routeIndex = require("./routes/index.js");
 const middleware = require("./middleware/index.js");
 

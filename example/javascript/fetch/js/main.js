@@ -1,31 +1,23 @@
 /**
- * @preserve Made by dbwebb-staff, staff@dbwebb.se
+ * @preserve Made by mos@dbwebb.se
  */
 (function () {
     'use strict';
 
-    //var myContent = document.getElementById('content');
-    // var flagTarget = document.getElementById('flag');
-    // var flagLink = document.getElementById('draw-elfenbenskusten');
+    let url;
 
-    //myContent.innerHTML = '<h3>This is a MEGA template!</h3>';
+    //url = "https://api.scb.se/UF0109/v2/skolenhetsregister/sv/kommun/1081";
+    url = "data/1081.json";
+    fetch(url)
+        .then((response) => {
+            return response.json();
+        })
+        .then((myJson) => {
+            console.log(myJson);
+        });
 
-    // function drawFlagElfenbenskusten()  {
-    //     var flagElfenbenskusten = '<div class="flag elfenbenskusten"><div class="part1"></div>' +
-    //     '<div class="part2"></div></div>';
-    // 
-    //     console.log("Drawing flag");
-    //     flagTarget.innerHTML = flagElfenbenskusten;
-    // }
-    // 
-    // 
-    // flagLink.addEventListener("click", function () {
-    //     console.log("Event for clicking link elfenbenskusten.");
-    //     drawFlagElfenbenskusten();
-    // });
-
-//    fetch('https://api.scb.se/UF0109/v2/skolenhetsregister/sv/kommun/1081')
-    fetch('data/1081.json')
+    url = "https://rem.dbwebb.se/api/users";
+    fetch(url)
         .then((response) => {
             return response.json();
         })
@@ -34,7 +26,9 @@
                 appendData(myJson);
         });
 
+
     console.log('Sandbox MEGA is ready!');
+
 
 })();
 
