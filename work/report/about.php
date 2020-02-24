@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>About this site</title>
-    <link rel="stylesheet" href="css/style.css">
+    <base href="/home/OneDrive/Dokument/Webdevelopment/Git/websoft/work/">
+    <link rel="stylesheet" href="report/css/style.css">
     <link rel="icon" href="favicon.ico">
 </head>
 
@@ -14,7 +15,7 @@
 
     <header>
     <?php 
-        $pageIndex = 3;
+        $pageIndex = 4;
         include 'views\menu.php';?>
     </header>
 
@@ -22,7 +23,7 @@
     <div class="content">
         <article>
 
-            <img src="img/webdev.jpg" width="100%" alt="WebDev">
+            <img src="report/img/webdev.jpg" width="100%" alt="WebDev">
 
             <figcaptionp>Software development for the web aims to develop skills in advanced web programming and
                 software
@@ -33,20 +34,20 @@
             <div class="link_container">
                 <div class="link_logo">
                     <a href="https://hkr.instructure.com/courses/2432">
-                        <img src="img/hkr.jpg" alt="hkr">
+                        <img src="report/img/hkr.jpg" alt="hkr">
                         <figcaptionp>Course website</figcaption>
                     </a>
                 </div>
 
                 <div class="link_logo">
                     <a href="https://github.com/multi950/websoft">
-                        <img src="img/fork.png" alt="forked_git">
+                        <img src="report/img/fork.png" alt="forked_git">
                         <figcaptionp>Forked git</figcaption>
                     </a>
                 </div>
                 <div class="link_logo">
                     <a href="https://github.com/Webbprogrammering/websoft">
-                        <img src="img/github.png" alt="source_git">
+                        <img src="report/img/github.png" alt="source_git">
                         <figcaptionp>Source git</figcaption>
                     </a>
                 </div>
@@ -60,7 +61,7 @@
 
 
     <?php include 'views\bird.html';?>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="report/js/main.js"></script>
 </body>
 
 </html>

@@ -2,16 +2,17 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="css/school_style.css">
-    <script src="js/jquery-3.4.1.js"></script>
+        <base href="/home/OneDrive/Dokument/Webdevelopment/Git/websoft/work/">
+    <link rel="stylesheet" type="text/css" href="report/css/school_style.css">
+    <script src="report/js/jquery-3.4.1.js"></script>
 </head>
 
 <body>
 
 
     <?php 
-        $pageIndex = 1;
-        include 'views\menu.php';?>
+        $pageIndex = 2;
+        include dirname(__DIR__) . '\report\views\menu.php';?>
     <div class="school_container">
 
 
@@ -28,8 +29,8 @@
     <?php include 'views\footer.html';?>
     </footer>
 
-    <?php include 'views\bird.html';?>
-    <script type="text/javascript" src="js/schools.js">
+    <?php include dirname(__DIR__) . '\report\views\bird.html';?>
+    <script type="text/javascript" src="report/js/schools.js">
     </script>
     <script>
         resetSchoolTable();

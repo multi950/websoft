@@ -4,14 +4,15 @@
 <head>
     <meta charset="utf-8">
     <title>Report from the course sections</title>
-    <link rel="stylesheet" href="css/style.css">
+    <base href="/home/OneDrive/Dokument/Webdevelopment/Git/websoft/work/">
+    <link rel="stylesheet" href="report/css/style.css">
     <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
     <header>
         <?php 
-        $pageIndex = 2;
+        $pageIndex = 3;
         include 'views\menu.php';?>
     </header>
 
@@ -24,7 +25,7 @@
                 <h2 class="clickable_header">S01</h2>
                 <div class="text_container">
                     <p>20 Jan 20
-
+                    <br>
                         Assignment 1
                         <br><br>
                         • Did you before knowing about the techniques Git, GitHub, Markdown and/or GitHub Pages?
@@ -61,7 +62,7 @@
                 <h2 class="clickable_header">S02</h2>
                 <div class="text_container">
                     <p>26 Jan 20
-
+                    <br>
                         Assignment 2
                         <br><br>
                         • Have you any previous experience of HTML, CSS and/or JavaScript?
@@ -172,7 +173,27 @@
             <section>
                 <h2 class="clickable_header">S05</h2>
                 <div class="text_container">
-                    <p>Here is the text for this section.</p>
+                    <p>Assignment 5
+                    <br><br>
+                    • How do you feel about PHP as a programming language?<br>
+                    I have note worked too much with it but so far I like it. It feels a little tricky to work in by itself since it feels like combining html and php, I feel like it could be easier 
+                    to work with html and php separately, maybe that what we are supposed to do and I am just doing it wrong.
+                    <br><br>
+                    • Can you compare PHP to other languages you know?<br>
+                    I would say it is kinda like java and html combined. I do not have too much experience but I feel like it is very similar to html (since you can write html in it). 
+                    <br><br>
+                    • Describe how you took on the coding exercise, what grade did you aim for and are you satisfied with the result?<br>
+                    I followed the assignment until grade 5, which is the grade I am aiming for. I would say that I am satisfied with the result but the code feels a bit unpolished. 
+                    I also found the examples very helpful, I did try to do something different from the examples bu was unsure if that would be bad practice so decided to go with what was recommended to us.
+                     The way I wanted to solve it was similar to the MVC method, instead of having the needed mysql methods in the php files, I wanted to have one mysql file that handled all communication with the db and 
+                     then different views that was talking to controllers that was talking to the mysql.php. 
+                    <br><br>
+                    • What is your TIL for this course section?<br>
+                    • my sql connectivity using php <br>
+                    • the &#60;base&#62; tag in order to specify the root directory <br>
+                    • more advanced php than I knew before, like creating foreach loops and such<br>
+                    • How to get incoming values through the url in a more efficient manner than before<br>
+                    </p>
                 </div>
             </section>
 
@@ -221,7 +242,7 @@
     <footer>
         <?php include 'views\footer.html';?>
     </footer>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="report/js/main.js"></script>
 
     <script>
         var clickableHeaderList = document.getElementsByClassName("clickable_header");

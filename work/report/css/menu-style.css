@@ -54,7 +54,7 @@
   transition: all .5s ease;
 }
 .menu > .menu-list > li:hover > .sub-menu:not(.close){    
-  max-height: 150px;
+  max-height: 200px;
 }
 .menu > .menu-list > li > .sub-menu {
   max-height: 0px;

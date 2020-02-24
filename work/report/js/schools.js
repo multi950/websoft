@@ -3,7 +3,7 @@
 var regionData;
 var isTableShowing = false;
 let regionSelector;
-var regionSrc = 'json/kommuner.json';
+var regionSrc = 'report/json/kommuner.json';
 let schoolTable;
 (function () {
 
@@ -34,14 +34,14 @@ function updateRegionData(data) {
 
 function updateSelector(data) {
     if (regionSelector == null) {
-        initilizeSelector();
+        initializeSelector();
     }
     fillSelector(data);
 }
 
 function onRegionChange() {
 
-    fetchJson('json/' + regionSelector.value + '.json').then(json => {
+    fetchJson('report/json/' + regionSelector.value + '.json').then(json => {
         if (json === undefined) {
             closeTable();
             resetSchoolTable();
@@ -60,7 +60,7 @@ function onSelectClick(){
     }
 }
 
-function initilizeSelector() {
+function initializeSelector() {
     regionSelector = document.getElementById('region-selector');
     regionSelector.length = 0;
     regionSelector.selectedIndex = 0;

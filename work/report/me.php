@@ -3,20 +3,21 @@
 <head>
     <meta charset="utf-8">
     <title>ME!</title>
-    <link rel="stylesheet" href="css/style.css">
+    <base href="/home/OneDrive/Dokument/Webdevelopment/Git/websoft/work/">
+    <link rel="stylesheet" href="report/css/style.css">
     <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
 
 <?php 
-        $pageIndex = 4;
+        $pageIndex = 5;
         include 'views\menu.php';?>
 
 <div class="content">
 <article>
 
-<p><img src="img/me.png" width="30%" alt="Me on an image" style="border-radius: 100%; margin-left: 35%;" ></p>
+<p><img src="report/img/me.png" width="30%" alt="Me on an image" style="border-radius: 100%; margin-left: 35%;" ></p>
 
 <p style="text-align: center;">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -33,6 +34,6 @@
 
 
 <?php include 'views\bird.html';?>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="report/js/main.js"></script>
 </body>
 </html>
