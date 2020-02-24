@@ -5,20 +5,14 @@
 
 
 <?php
-/**
- * A page controller
- */
 require "config.php";
 require "SQL.php";
 
-// Get incoming values
 $item  = $_GET["item"] ?? null;
 $id    = $_POST["id"] ?? null;
 $label = $_POST["label"] ?? null;
 $type  = $_POST["type"] ?? null;
 $save  = $_POST["save"] ?? null;
-// var_dump($_GET);
-// var_dump($_POST);
 
 $db = connectDatabase($dsn);
 
@@ -26,22 +20,18 @@ $sql = "SELECT * FROM tech";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $res1 = $stmt->fetchAll();
-//var_dump($res1);
 
 if ($item) {
     $sql = "SELECT * FROM tech WHERE id = ?";
     $stmt = $db->prepare($sql);
     $stmt->execute([$item]);
     $res2 = $stmt->fetch();
-    //var_dump($res2);
 }
 
 if ($save) {
     $sql = "UPDATE tech SET label = ?, type = ? WHERE id = ?";
     $stmt = $db->prepare($sql);
     $stmt->execute([$label, $type, $id]);
-    //var_dump([$label, $type, $id]);
-
     header("Location: " . $_SERVER['PHP_SELF'] . "?item=$id");
     exit;
 }

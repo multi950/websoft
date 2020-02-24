@@ -7,8 +7,6 @@ $dsn_config = $dsn;
  * @var array $dsn with connection details
  * @return object database connection
  */
-
-
 function connectDatabase(array $dsn = null)
 {
     if($dsn === null){

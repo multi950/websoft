@@ -13,7 +13,6 @@ $sql = "SELECT * FROM tech";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $res1 = $stmt->fetchAll();
-//var_dump($res1);
 ?>
 <?php 
     include (dirname(__DIR__, 2) . '\report\views\menu.php');?>

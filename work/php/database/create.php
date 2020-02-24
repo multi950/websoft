@@ -6,28 +6,20 @@
 
 
 <?php
-/**
- * A page controller
- */
 require "config.php";
 require "SQL.php";
 
-// Get incoming values
 $label  = $_POST["label"] ?? null;
 $type   = $_POST["type"] ?? null;
 $create = $_POST["create"] ?? null;
-//var_dump($_POST);
 
 if ($create) {
-    // Connect to the database
     $db = connectDatabase($dsn);
 
-    // Prepare and execute the SQL statement
     $sql = "INSERT INTO tech (label, type) VALUES (?, ?)";
     $stmt = $db->prepare($sql);
     $stmt->execute([$label, $type]);
 
-    // Get the results as an array with column names as array keys
     $sql = "SELECT * FROM tech";
     $stmt = $db->prepare($sql);
     $stmt->execute();

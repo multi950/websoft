@@ -6,23 +6,15 @@
 
 
 <?php
-/**
- * A page controller
- */
 
 require "config.php";
 require "SQL.php";
 
-// Get incoming values
 $search = $_GET["search"] ?? null;
 $like = "%$search%";
-//var_dump($_GET);
 
 if ($search) {
-    // Connect to the database
     $db = connectDatabase($dsn);
-
-    // Prepare and execute the SQL statement
     $sql = <<<EOD
 SELECT
     *
@@ -35,8 +27,6 @@ WHERE
 EOD;
     $stmt = $db->prepare($sql);
     $stmt->execute([$search, $like, $like]);
-
-    // Get the results as an array with column names as array keys
     $res = $stmt->fetchAll();
 }
 ?>
