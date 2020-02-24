@@ -200,7 +200,34 @@
             <section>
                 <h2 class="clickable_header">S06</h2>
                 <div class="text_container">
-                    <p>Here is the text for this section.</p>
+                    <p>
+                        Assignment 6
+                        <br><br>
+                    • What is your own opinion on popularity of programming languages and what are your thoughts of future popularity among programming languages?<br>
+                    My first thoughts of the most popular programming language, which according to https://insights.stackoverflow.com/ (2019) is JavaScript, is that it makes sense. 
+                    Almost all modern companies today has some kind of website which creates a huge demand of JavaScript amongst others (HTML/CSS which is on close second).
+                    One interesting thought, however, is to think about if the web dev jobs ever will be replaced with some kind of WordPress or similar
+                    <br><br>
+                    • What will be your own choice for selecting future programming languages?<br>
+                    Of course I would like something that is high in demand to get better opportunities but also a language related to something I really enjoy, there are some areas where 
+                    I would love to work with the knowledge I have today, like IOT, robotics, web design or innovation. Unfortunately I do not have enough experience with any of the areas to be certain.
+                    But I would believe that my future job would be something with JavaScript, Java, C or python.
+                    <br><br>
+                    • Do your own investigation on https://trends.google.com (Links to an external site.) to customize your own comparison on programming languages (or frameworks) and elaborate on the results.<br><br>
+                    I decided to compare some languages and was actually surprized by the result.
+                     So I compared Java, Flutter, React.js, JavaScript and Python. And to my surprize python was the most searched, could this be because it also is a snake, perhaps. 
+                     The second most searched was Java followed by JavaScript, React.js and lastly Flutter, which I also thought was a bit strange since Flutter is developed by Google which would provide with some recognition. 
+                     That Java is close second makes sense to me, since it has so many usability's.
+                     <br><br>
+                    • If you were to recommend a language/framework/technology to your potential employer and your next large project, what would it be and how would you “sell it”?<br>
+                    It all would depend on what area of work but since it is probably web based or phone based I would recommend react.js or react native, simply because a lot of companies are using it, 
+                    it is pretty modern but still well tested and its multiplatform which would give more bang for the buck.
+                    <br><br>
+                    • What is your TIL for this course section?<br>
+                    • that python is 20x more searched than Flutter
+                    • more reflective thinking than any concrete learning outcomes.
+                    <br>
+                    </p>
                 </div>
             </section>
 
