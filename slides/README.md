@@ -29,6 +29,8 @@ Here are the slideshows.
 * S07: ASP.NET and Model View Controller (MVC)
     * [.NET Core](s07-01-dotnet_core)
     * [ASP.NET Core](s07-02-asp_dotnet_core)
+* [S08: Web application performance](s08-01-performance)
+* [S09: Web application security](s09-01-security)
 
 
 
