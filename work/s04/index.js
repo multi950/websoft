@@ -15,7 +15,7 @@ app.set('views', path.join(__dirname,'/views'));
 app.use(middleware.logIncomingToConsole);
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/", routeIndex);
-app.use("/today", routeToday);
+
 
 app.listen(port, logStartUpDetailsToConsole);
 
