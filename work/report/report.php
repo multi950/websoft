@@ -405,7 +405,26 @@
             <section>
                 <h2 class="clickable_header">S09</h2>
                 <div class="text_container">
-                    <p>Here is the text for this section.</p>
+                    <p>
+                    Assignment 9<br><br>
+
+                    • Elaborate on a few (3-5) different security issues or concerns, from your own experience, related to web application security and relate them to the OWASP top ten.<br>
+                    Before phishing techniques was well known I once phished my friends facebook username and password.
+                     This was done by copying the error page by facebook when trying to enter a facebook page but not logged in, then changing a method in the login-form so the data was saved in a database. 
+                    This was only jokes and fun and my friend did not mind but if the wrong person got the credentials it could have ended badly. I would say that this scenario would fall under "A2-Broken Authentication", 
+                    and could have been prevented by various ways, many of which are in use today.<br><br>
+                    Another scenario, also with broken authentication, is when I have closed a tab on which i have been logged to some website and left my computer.
+                     Then my friend shows up, opens the website where the session ID is available and now has access to my account.<br><br>
+                    If we look at another vulnerability, A1-Injection, was once preformed when I was testing a console app (with a mySQL connection), I created for another course.<br><br>
+                    • Summarize by providing your own guidelines to a new web programmer on the topic “The essential guidelines to follow to create secure web applications”.<br>
+                    First and foremost, use HTTPS, it solves some common security issues like man in the middle attacks.<br>
+                    If using mySQL, use sql queries. <br>
+                    Decouple the website, parts where it does not make sense to communicate, should not communicate. this way if a hacker gets access to one part of the website, then he can still not get to another <br>
+                    Use logging, then you can see suspicious behavior. <br>
+                    Make sure that there is a way to contact you if someone finds a security flaw.<br><br>
+                    • What is your TIL for this course section?<br>
+                    The OWASP Top Ten and how to prevent security risks.
+                    </p>
                 </div>
             </section>
 
