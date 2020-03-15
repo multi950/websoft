@@ -41,5 +41,15 @@ namespace webapp.Services
             }
             return null;
         }
+
+        public void SaveAccounts(IEnumerable<Account> accounts){
+            string jsonString = JsonSerializer.Serialize(accounts);
+            File.WriteAllText(JsonFileName, jsonString);
+        }
+        public void SaveAccount(Account accountToSave){
+            List<Account> accountList = GetAccounts().ToList();
+            accountList.Where(account => account.Number == accountToSave.Number).ToList().ForEach(element => element.Balance = accountToSave.Balance);
+            SaveAccounts(accountList);
+        }
     }
 }

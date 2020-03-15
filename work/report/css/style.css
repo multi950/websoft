@@ -14,7 +14,11 @@ body{
 
 .content p{
     padding: 3em;
+    padding-bottom: 0em;
     padding-top: 1em;
+}
+.content p:last-of-type{
+    padding-bottom: 3em;
 }
 
 .link_logo{
@@ -58,3 +62,36 @@ body{
 .appear {
     max-height: 500px;
 }
+
+
+	table.data-table {
+		font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 24px;
+        background-color: rgba(255, 255, 255, 0.55);
+        border: 2px solid rgb(67, 67, 67);
+    } 
+    table.data-table caption{
+        text-align: left;
+        font-weight: bold;
+        background-color: rgb(67, 67, 67);
+        color: white;
+        width: fit-content;
+        padding: 1px 4px;
+    }
+    table.data-table th, table.data-table td{
+        border-bottom: 1px solid  rgb(67, 67, 67);
+        padding: 4px;
+        margin: 4px;
+    }
+    table.data-table td + td, table.data-table th + th{
+        border-left: 1px solid  rgb(67, 67, 67);
+    }
+
+	.data-table td {
+
+	}
+	.data-table th {
+        background-color: #cfe2f3; 
+		font-weight: bold;
+	}

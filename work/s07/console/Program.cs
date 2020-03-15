@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -26,13 +27,15 @@ namespace console
             System.Console.Write(
             "1) Get all accounts\n" +
             "2) Get account by account number\n" +
+            "3) Search\n" +
+            "4) Move money from Account to Account\n" +
             "0) exit\n"
 
             );
             switch (System.Console.ReadLine())
             {
                 case "1":
-                accounts = ReadAccounts();
+                accounts = GetAccounts();
                     
                     System.Console.WriteLine(AccountFormater(accounts.ToList()));
                 
@@ -41,7 +44,7 @@ namespace console
                 case "2" : 
                         System.Console.WriteLine("Please enter account number");
                         var ownerSearch =  System.Console.ReadLine();
-                        accounts = (ReadAccounts()).ToList();
+                        accounts = (GetAccounts()).ToList();
                         foreach(var account in accounts){
                             if(account.Number.ToString().Equals(ownerSearch)){
                                 System.Console.WriteLine(
@@ -49,15 +52,39 @@ namespace console
                                     );
                             }
                             }
-                        
-                        
+                        break;
+                case "3":
+                System.Console.WriteLine("Please enter a search string");
+                string searchString = System.Console.ReadLine();
+                List<Account> results = SearchAccounts(searchString);
+                System.Console.WriteLine(AccountFormater(results));
                 break;
+                case "4":
+                    System.Console.WriteLine("Please enter account number for from-account");
+                    string fromAccountNumber = System.Console.ReadLine();
+                    Account fromAccount = AccountSelector(fromAccountNumber);
+                    if(fromAccount == null) {System.Console.WriteLine("invalid account number");return;}
+                    System.Console.WriteLine("Please enter account number for to-account");
+                    string toAccountNumber = System.Console.ReadLine();
+                    Account toAccount = AccountSelector(toAccountNumber);
+                    if(toAccount == null) {System.Console.WriteLine("invalid account number");return;}
+                    int maxSum = fromAccount.Balance;
+                    System.Console.WriteLine("Please enter sum, a maximum of: " + 
+                     maxSum + " can be sent");
+                    int sum = Int16.Parse(System.Console.ReadLine());
+                    if(sum > 0 && sum < maxSum){
+                        fromAccount.Balance -= sum;
+                        toAccount.Balance += sum;
+                        saveAccount(fromAccount);
+                        saveAccount(toAccount);
+                    }
+                    break;
                 case "0":
                     Program.isRunning = false;
                     break;
             }
         }
-        static IEnumerable<Account> ReadAccounts()
+        static IEnumerable<Account> GetAccounts()
         {
             String file = "../data/account.json";
 
@@ -76,7 +103,36 @@ namespace console
                 return json;
             }
         }
+        static void SetAccounts(IEnumerable<Account> accounts)
+        {
+            String file = "../data/account.json";
+            string jsonString = JsonSerializer.Serialize(accounts);
+            File.WriteAllText(file, jsonString);
+        }
+        static Account AccountSelector(String number){
+            try{
+            return GetAccounts().FirstOrDefault(account => account.Number.ToString().Equals(number));
+            } catch(System.NullReferenceException e){
+                System.Console.WriteLine("invalid account number");
+                return null;
+            }
+        }
+        static List<Account> SearchAccounts(string searchString){
+            List<Account> accountList = (GetAccounts()).ToList();
+            return accountList.FindAll(delegate(Account account){
+                        if (account.Number.ToString().Equals(searchString) 
+                        || account.Label.ToString().Contains(searchString)
+                        || account.Owner.ToString().Contains(searchString))
+                            return true;
+                        else return false;
+                });
+        }
 
+        static void saveAccount(Account accountToSave){
+            List<Account> accountList = GetAccounts().ToList();
+            accountList.Where(account => account.Number == accountToSave.Number).ToList().ForEach(element => element.Balance = accountToSave.Balance);
+            SetAccounts(accountList);
+        }
         static string AccountFormater(List<Account> accounts){
                    
                 string fancyString =

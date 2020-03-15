@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Report from the course sections</title>
     <base href="/home/OneDrive/Dokument/Webdevelopment/Git/websoft/work/">
-    <link rel="stylesheet" href="report/css/style.css">
+    <link rel="stylesheet" href="./report/css/style.css">
     <link rel="icon" href="favicon.ico">
 </head>
 
@@ -25,7 +25,7 @@
                 <h2 class="clickable_header">S01</h2>
                 <div class="text_container">
                     <p>20 Jan 20
-                    <br>
+                        <br>
                         Assignment 1
                         <br><br>
                         • Did you before knowing about the techniques Git, GitHub, Markdown and/or GitHub Pages?
@@ -62,7 +62,7 @@
                 <h2 class="clickable_header">S02</h2>
                 <div class="text_container">
                     <p>26 Jan 20
-                    <br>
+                        <br>
                         Assignment 2
                         <br><br>
                         • Have you any previous experience of HTML, CSS and/or JavaScript?
@@ -141,17 +141,19 @@
                 <h2 class="clickable_header">S04</h2>
                 <div class="text_container">
                     <p>
-        
-                    Assignment 4
-                    <br><br>
-                    • Tell me about your previous experience on node/npm or any equal programming tools.<br>
-                    I had no previous knowledge about node or npm before this assignment. I have only heard about 
-                    node.js before and understood that it was relented to backend.
-                    <br><br>
-                    • How do you feel about working with JavaScript, Node and Express?<br>
-                    I enjoy it, it was not so long ago since we worked with RESTful api´s so express and node was pretty straight foreword. 
-                    When it comes to js I feel like I've really improved and gathered an understanding surrounding it during the previous assignment. 
-                    Ejs was a bit different and tricky to use with all the <% %> but doable with some logic.
+
+                        Assignment 4
+                        <br><br>
+                        • Tell me about your previous experience on node/npm or any equal programming tools.<br>
+                        I had no previous knowledge about node or npm before this assignment. I have only heard about
+                        node.js before and understood that it was relented to backend.
+                        <br><br>
+                        • How do you feel about working with JavaScript, Node and Express?<br>
+                        I enjoy it, it was not so long ago since we worked with RESTful api´s so express and node was
+                        pretty straight foreword.
+                        When it comes to js I feel like I've really improved and gathered an understanding surrounding
+                        it during the previous assignment.
+                        Ejs was a bit different and tricky to use with all the <% %> but doable with some logic.
                     <br><br>
                     • Explain how you did take on the coding assignment, did you have a plan and did it work?<br>
                     This time I decided to follow the instructions thoroughly and use the tools and resources that where provided to us. 
@@ -234,15 +236,170 @@
             <section>
                 <h2 class="clickable_header">S07</h2>
                 <div class="text_container">
-                    <p>Here is the text for this section.</p>
+                    <p>
+                    Assignemnt 7<br><br>
+
+                    • Try to explain the platform .NET (C#, ASP.NET) to a skilled programmer, but newbie to this Microsoft technology.<br>
+                    ASP.NET is a framework used to develop dynamic web applications. It uses module view controllers and can be used to develop web pages, restful api's amongst other things. 
+                    One key feature with ASP.NET is that it is possible to write C# code directly inside html content which can be used to create dynamic web sites. 
+                    <br><br>
+                    • Elaborate by comparing .NET technologies with the other technologies we learned during the course.<br>
+                    I would compare it to php, in the sense that both are used for back end. It seems like both php and asp.net can accomplish similar tasks even if asp.net only is a framework.
+                    The differences however, seem to be that php is more focused on server side while asp is more general web applications. Secondly ASP seems to be both faster and secure than php, even if This
+                    is up the the programmer to decide while implementing.<br><br>
+                    • Describe how you took on the coding exercise, what grade did you aim for and are you satisfied with the result?<br>
+                    First I decided to read up on ASP.NET from windows learning website, just to get a more general understanding and once I felt that I was ready I continued with the assignment. 
+                    I felt that the youtube videos from the lectures also was useful to get starting. I aimed for a 5 but since I was out a little in last minute I only accomplished 4 (because you only need 3 x grade 5's to get a final grade 5).
+                    I am pretty happy with the outcome thought.<br><br>
+                    • What is your TIL for this course section?<br>
+                    • How to use C# <br>
+                    • A better understanding of restful APIs <br>
+                    • How the different parts of MVC works and interacts with each other <br>
+
+                    
+                    </p>
                 </div>
             </section>
 
             <section>
                 <h2 class="clickable_header">S08</h2>
                 <div class="text_container">
-                    <p>Here is the text for this section.</p>
+                    <p>
+                    Assignment 8 <br><br>
+                    <b>Authors: Rasmus Eriksson & Marcus Sørensen</b><br><br>
+                    In General the 3 websites performed well. They would load fast and all of them would have a time between 1-2 seconds for finishing loading the website with all content showing.
+                    Although when we analysed the websites using Light house ikea and sigma still did fine but suddenly Tetra pak looked grim. In accessibility and best practices they performed
+                    poorly compared to the other websites. For accessibility their The form labels did not have associated labels and buttons does not have accessible names. for best practices they
+                    still have 3 resources that they get through http 1.1 and not 2. They include front-end Javascript libraries with known security vulnerabilities and browser errors are logged
+                    to the console.
+                    
+                    </p>
+                <table class="data-table" cellspacing="0">
+                <caption>Devtools network tab</caption>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>requests</th>
+                            <th>transferred</th>
+                            <th>resources</th>
+                            <th>Finish</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TETRA PAK</td>
+                            <td>69</td>
+                            <td>1.1 MB</td>
+                            <td>2 MB</td>
+                            <td>1s</td>
+                        </tr>
+                        <tr>
+                            <td>IKEA</td>
+                            <td>107</td>
+                            <td>5.3 MB</td>
+                            <td>6.6 MB</td>
+                            <td>1.4s</td>
+                        </tr>
+                        <tr>
+                            <td>SIGMA</td>
+                            <td>47</td>
+                            <td>2 MB</td>
+                            <td>3 MB</td>
+                            <td>1.18s</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="data-table" cellspacing="0">
+                <caption>PageSpeed Insigts (Desktop)</caption>
+                   <tbody>
+                        <tr class="data-table-firstrow">
+                            <th></th>
+                            <th>Overall</th>
+                            <th>First contenful paint</th>
+                            <th>speed index</th>
+                            <th>Time to interactive</th>
+                            <th>first meaningful paint</th>
+                            <th>First CPU idle</th>
+                            <th>Max Potential First Input Delay</th>
+                        </tr>
+                    
+                    
+                        <tr>
+                            <td>TETRA PAK</td>
+                            <td>99</td>
+                            <td>0.8s</td>
+                            <td>0.8s</td>
+                            <td>0.8s</td>
+                            <td>0.8s</td>
+                            <td>0.8s</td>
+                            <td>40ms</td>
+                        </tr>
+                        <tr>
+                            <td>IKEA</td>
+                            <td>91</td>
+                            <td>0.9s</td>
+                            <td>1.6s</td>
+                            <td>1.3s</td>
+                            <td>1.0s</td>
+                            <td>1.2s</td>
+                            <td>100ms</td>
+                        </tr>
+                        <tr>
+                            <td>SIGMA</td>
+                            <td>100</td>
+                            <td>0.3s</td>
+                            <td>0.7s</td>
+                            <td>1.4s</td>
+                            <td>0.5s</td>
+                            <td>1.2s</td>
+                            <td>170ms</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="data-table" cellspacing="0">
+                <caption>Light house (Desktop)</caption>
+                    <thead>
+                        <tr class="data-table-firstrow">
+                            <th></th>
+                            <th>Accessibility</th>
+                            <th>Best Practices</th>
+                            <th>SEO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TETRA PAK</td>
+                            <td>66</td>
+                            <td>71</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>IKEA</td>
+                            <td>91</td>
+                            <td>93</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>SIGMA</td>
+                            <td>61</td>
+                            <td>93</td>
+                            <td>91</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                What is your TIL for this course section?<br>
+                • How to use lighthouse which can be a useful tool when improving ones website<br>
+                • Dynamically changing the content of a webpage can dramatically improve the performance<br>
+                • Images has a large impact on performance and should be as small as possible<br>
+                • The importance of accessibility to utilize the content for all user groups<br>
+                • SEO seems to be highly prioritized on all websites<br>
+                
+                </p>
                 </div>
+
             </section>
 
             <section>
