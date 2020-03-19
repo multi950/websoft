@@ -266,7 +266,7 @@
                 <div class="text_container">
                     <p>
                     Assignment 8 <br><br>
-                    <b>Authors: Rasmus Eriksson & Marcus Sørensen</b><br><br>
+                    <b>Authors: Rasmus Eriksson, Marcus Sørensen & Joakim Rönning</b><br><br>
                     In General the 3 websites performed well. They would load fast and all of them would have a time between 1-2 seconds for finishing loading the website with all content showing.
                     Although when we analysed the websites using Light house ikea and sigma still did fine but suddenly Tetra pak looked grim. In accessibility and best practices they performed
                     poorly compared to the other websites. For accessibility their The form labels did not have associated labels and buttons does not have accessible names. for best practices they
