@@ -431,7 +431,45 @@
             <section>
                 <h2 class="clickable_header">S10</h2>
                 <div class="text_container">
-                    <p>Here is the text for this section.</p>
+                    <p>
+                        
+                    • Write a general paragraph about how the project was implemented. Problems / solutions / simple /
+                    difficult / fast / long time, etc. Was the project easy or difficult? Did it take a long time? What
+                    was difficult and what went easy? Was this a good and reasonable project for this course? How was it
+                    to work in a team? <br><br>
+                    Implementations<br>
+                    We tried to have regular meetings each morning where we would discuss and plan the project. This was
+                    very successful in the beginning and improved the overall work surrounding the project. One thing
+                    that was missing from the meetings/planning pace part was documentation as well as a concrete
+                    blueprint on how the different parts would be implemented.<br><br>
+                    Problems<br>
+                    One problem that I experienced was that I overcomplicated some problems which would take more time
+                    than necessary and make it difficult to understand. I did realize it mid-project and managed to
+                    correct the mistake.<br>
+                    The lack of blueprinting caused everyone to solve problems their own way which made the final code
+                    inconsistent.<br>
+                    One of the team members went overseas during the project which messed up with the communication for
+                    a duration of time, this was corrected later in the project.<br><br>
+                    Project thoughts<br>
+                    I thought that the project was well fitted for the course, it summoned up a lot of what was learned
+                    in the course while still leaving room for each group to decide their different technologies<br><br>
+                    Team thoughts<br>
+                    I felt that we had a good group dynamic, good communication and everyone did their part.<br><br>
+                    • Finish with a final paragraph with your thoughts on the course and what you think about the
+                    material and the guide (about 5-10 sentences). Provide feedback to teachers and suggest any
+                    improvement suggestions for upcoming course opportunities. Are you satisfied/dissatisfied? Will you
+                    recommend the course to your friends/colleagues? On a scale of 1-10, what grade do you give the
+                    course?<br>
+
+                    Considering the duration of the course and the learning amount I would say that the course did very
+                    well. The course was well structured from the beginning and it was easy to understand what to do in
+                    order to achieve the desired grade. I would definitely recommend this course since it gives a good
+                    overview of relevant technologies that are in demand by companies today. It is very hard to give
+                    this course a grade since there were a lot of unplanned events that had a big impact on the quality
+                    of the course (the coronavirus), but around 8/10 considering the course as a whole.
+
+
+                    </p>
                 </div>
             </section>
 
